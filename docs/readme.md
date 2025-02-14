@@ -1,5 +1,7 @@
 # Middle to Senior Front-End Engineer Recruitment
 
+['klik dsini'](https://idn-remote-jobs.notion.site/Frontend-Engineer-19335004635781268b3ccb0e26fa8234)
+
 We're building InvoiceHub, a sleek invoice management platform, and we'd like you to create two core pages that demonstrate your frontend development expertise.
 
 ## Challenge Overview: Create two main pages that mirror our Figma design
