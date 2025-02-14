@@ -23,7 +23,7 @@ export function MenuContent() {
     return (
         <Stack sx={{ flexGrow: 1, p: 1, justifyContent: 'space-between' }}>
             <List dense>
-                {mainListItems.map((item, index) => (
+                {mainListItems.map((item) => (
                     <ListItem key={item.id} disablePadding sx={{ display: 'block' }}>
                         <ListItemButton
                             selected={path === item.href}

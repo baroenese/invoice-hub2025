@@ -30,7 +30,7 @@ function renderStatus(status: 'Paid' | 'Unpaid' | 'Pending') {
 }
 
 export function renderAvatar(
-  params: GridCellParams<{ name: string; color: string }, any, any>,
+  params: GridCellParams<{ name: string; color: string }>,
 ) {
   if (params.value == null) {
     return '';
@@ -81,7 +81,7 @@ export const columns: GridColDef[] = [
     align: 'center',
     flex: 1,
     minWidth: 100,
-    renderCell: (params) => {
+    renderCell: () => {
       return (
         <Button>
           <Menu />

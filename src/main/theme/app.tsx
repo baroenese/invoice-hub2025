@@ -13,7 +13,7 @@ interface AppThemeProps {
 }
 
 export function AppTheme(props: AppThemeProps) {
-    const { children, disableCustomTheme, themeComponents } = props;
+    const { children, disableCustomTheme, fontFamily, themeComponents } = props;
     const [isMount, setIsMount] =  useState(false)
     const theme = useMemo(() => {
         return disableCustomTheme
@@ -27,7 +27,7 @@ export function AppTheme(props: AppThemeProps) {
                     cssVarPrefix: 'template',
                 },
                 typography: {
-                    fontFamily: props.fontFamily,
+                    fontFamily,
                 },
                 components: {
                     MuiAlert: {
@@ -47,7 +47,7 @@ export function AppTheme(props: AppThemeProps) {
                     ...themeComponents,
                 },
             });
-    }, [disableCustomTheme, themeComponents]);
+    }, [disableCustomTheme, themeComponents, fontFamily]);
 
     useEffect(() => {
         setIsMount(true)
